@@ -27,7 +27,7 @@ itemstats$difficulty <- item_descriptives$mean
 items_alpha <- alpha(itemsonly)
 itemstats$discrimination <- items_alpha$item.stats$r.cor
 itemstats$alpha_drop <- items_alpha$alpha.drop$raw_alpha
-colnames(itemstats) <- c("Difficulty","Item-total Correlation", "Alpha Drop")
+colnames(itemstats) <- c("Item", "Difficulty", "Item-total Correlation", "Alpha Drop")
 
 print(itemstats, n=24)
 
