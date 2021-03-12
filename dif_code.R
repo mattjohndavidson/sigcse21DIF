@@ -29,7 +29,7 @@ itemstats$discrimination <- items_alpha$item.stats$r.cor
 itemstats$alpha_drop <- items_alpha$alpha.drop$raw_alpha
 colnames(itemstats) <- c("Difficulty","Item-total Correlation", "Alpha Drop")
 
-itemstats
+print(itemstats, n=24)
 
 ## More on reliability
 #the function alpha() returns an overall Cronbach's alpha, as well as how alpha would change if each item were excluded.
